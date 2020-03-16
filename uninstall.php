@@ -31,7 +31,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Copyright 2005-2015 Automatic, Inc.
 */
 
-if (! class_exists('TurntablLearndashPlugin')){
+if (! class_exists('WP_UNINSTALL_Plugin')){
     class TurntablLearndashPlugin{
         /// CONSTANTS
         const VERSION = '1.0.0';
@@ -47,52 +47,15 @@ if (! class_exists('TurntablLearndashPlugin')){
     }
 }
 
-class TurntablLearndashPluginClass
-{
-    //methods
-    function __construct() {
-        add_action( 'init', array( $this, 'custom_post_type'));
-    }
+//Clear Database stored Data
+// $objectives = get_posts( array('post_type' => 'objective', 'numberposts' => -1));
 
-    //activation method
-    function activate() {
-        //generated a CPT
-        $this -> custom_post_type();
+// foreach( $objectives as $objective ) {
+//     wp_delete_post( $objective -> ID, true );
+// }
 
-        //flush rewrite rule
-       flush_rewrite_rules();
-    }
-
-    //deactivation method
-    function deactivate() {
-
-        //flush rewrite rule
-        flush_rewrite_rules();
-    }
-    //uninstall method
-    function uninstall() {
-        
-    }
-
-    function custom_post_type() {
-        register_post_type( 'objectives', ['public' => true, 'label' =>'OBJECTIVES']);
-    }
-
-    function enqueue() {
-        //enqueue all script
-    }
-}
-
-if( class_exists( 'TurntablLearndashPluginClass')) {
-    $turntablLearnDashPlugin = new TurntablLearndashPluginClass();
-}
-
-
- //activation
- register_activation_hook(__FILE__,array($turntablLearnDashPlugin, 'activate') );
-
-//deactivation
-register_deactivation_hook(__FILE__,array($turntablLearnDashPlugin, 'deactivate') );
-
-//uninstall
-register_uninstall_hook(__FILE__,array($turntablLearnDashPlugin, 'uninstall') );
+//Access the Database via SQL
+global $wpdb;
+$wpdb -> query( "DELETE FROM wp_posts WHERE post_type = 'objective'");
+$wpdb -> query( "DELETE FROM wp_postmeta WHERE post_id NOT IN (SELECT id FROM wp_posts)" );
+$wpdb -> query( "DELETE FROM wp_term_relationships WHERE object_id NOT IN (SELECT id FROM wp_posts)" );
