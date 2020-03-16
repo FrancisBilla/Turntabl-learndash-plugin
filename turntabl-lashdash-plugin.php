@@ -54,6 +54,9 @@ class TurntablLearndashPluginClass
         add_action( 'init', array( $this, 'custom_post_type'));
     }
 
+    function register() {
+       add_action('admin_enqueue_scripts', array( $this, 'enqueue')); 
+    }
     //activation method
     function activate() {
         //generated a CPT
@@ -80,11 +83,13 @@ class TurntablLearndashPluginClass
 
     function enqueue() {
         //enqueue all script
+        wp_enqueue_style( 'mypluginstyle', plugins_url('/assets/mystyle.css', __FILE__ ), array(''));
     }
 }
 
 if( class_exists( 'TurntablLearndashPluginClass')) {
     $turntablLearnDashPlugin = new TurntablLearndashPluginClass();
+    $turntablLearnDashPlugin -> register();
 }
 
 
@@ -94,5 +99,5 @@ if( class_exists( 'TurntablLearndashPluginClass')) {
 //deactivation
 register_deactivation_hook(__FILE__,array($turntablLearnDashPlugin, 'deactivate') );
 
-//uninstall
-register_uninstall_hook(__FILE__,array($turntablLearnDashPlugin, 'uninstall') );
+// //uninstall
+// register_uninstall_hook(__FILE__,array($turntablLearnDashPlugin, 'uninstall') );
