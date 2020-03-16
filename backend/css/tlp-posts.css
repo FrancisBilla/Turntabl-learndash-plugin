@@ -1,0 +1,1070 @@
+#tlp-wait-overlay,
+#tlp-upload-wait-overlay{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:fixed;
+	bottom:0;
+	right:0;
+	display:none;
+	background-color:rgba(80,80,80,0.5);
+	z-index:1;
+}
+#tlp-wait-overlay .tlp-wait-content,
+#tlp-upload-wait-overlay .tlp-wait-content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-64px 0 0 -64px;
+}
+.tlp-progress-overlay {
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 32px;
+	color: white;
+	margin: 10px auto;
+}
+.tlp-cancel-button {
+	background-color:#e4e4e4;
+	border: none;
+	padding: 10px 15px;
+	color:#000000;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.tlp-cancel-button:hover{
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-objective-table {
+	border-collapse: collapse;
+	outline: 1px solid rgb(224, 233, 234);
+	width:100%;
+}
+.tlp-objective-table th, .tlp-objective-table td {
+	padding: 5px;
+}
+.tlp-objective-table th, .tlp-objective-table .tlp-objective-list-row {
+	border-width:0 0 1px 0;
+	border-style:solid;
+	border-color:#e4e4e4;
+}
+.objective-list-id-col {
+	text-align: center;
+	width:5%;
+	vertical-align:top;
+}
+.objective-list-type-col {
+	text-align: center;
+	width:10%;
+	vertical-align:top;
+}
+.objective-list-description-col {
+	width:75%;
+	max-width: 250px;
+	text-align:left;
+	vertical-align:top;
+}
+.objective-list-id-container {
+	margin-top:25px;
+}
+.objective-list-description-container {
+	margin:20px 0;
+}
+.objective-list-seek-time-container,
+.objective-list-post-select-container,
+.objective-list-note-select-container {
+	margin-top:10px;
+}
+.full-width{
+	width:100%;
+}
+.objective-list-delete-col {
+	width:10%;
+	text-align: center;
+}
+.objective-list-move-col {
+	width:35px;
+	text-align: center;
+}
+.tlp-objective-error-message {
+	color: red;
+	margin: 5px 0 10px 0;
+}
+.tlp-post-setting-table{
+	border-collapse: collapse;
+	outline: 1px solid rgb(224, 233, 234);
+	width:100%;
+}
+.tlp-post-setting-table th, .tlp-post-setting-table td {
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px;
+}
+.tlp-button,
+a.tlp-button{
+	background-color:#fcc302;
+	border: none;
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	line-height:18px;
+	text-align: center;
+	display:inline-block;
+	text-decoration:none;
+}
+.tlp-button:hover,
+a.tlp-button:hover{
+	background-color:#00a5b3;
+}
+.tlp-delete-button{
+	background-color:#e4e4e4;
+	border: none;
+	padding: 10px 15px;
+	color:#000000;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+}
+.tlp-delete-button:hover{
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-clone-button{
+	background-color:#fcc302;
+	border: none;
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	text-align: center;
+	display:inline-block;
+	width:150px;
+	cursor: pointer;
+}
+.tlp-clone-button:hover{
+	background-color:#00a5b3;
+}
+.tlp-setting-section-help-text {
+	font-style: italic;
+	font-size:12px;
+}
+.tlp-info-icon {
+	background-image:url('../img/info-icon.png');
+	background-repeat: no-repeat;
+	background-position:0 50%;
+	width:16px;
+	height:16px;
+	vertical-align:top;
+	display:inline-block;
+}
+.tlp-setting-configure-block {
+	margin:10px 0;
+}
+.tlp-setting-section-header {
+	color:#00a5b3;
+	font-size:18px;
+}
+table.tlp-setting-configure-table {
+	width:100%;
+	margin:0;
+}
+.tlp-setting-configure-table, .tlp-setting-configure-table td {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-width: 0;
+}
+.tlp-setting-configure-table-row td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.tlp-setting-configure-table-header-col {
+	width: 150px;
+	text-align: left;
+	font-weight: bold;
+}
+/* -------------------------- quiz definition ------------------------- */
+.tlp-quiz-header {
+font-size: 14px;
+font-weight: bold;
+}
+.tlp-quiz-choice-container {
+	background-color:#fefefe;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d7d7d7;
+	padding:10px 20px;
+	margin-top:10px;
+}
+.tlp-quiz-choice-listing{
+	border-collapse:collapse;
+	width:100%;
+}
+.tlp-quiz-item-icon-col {
+	width:20px;
+	text-align:center;
+}
+.tlp-quiz-item-description-col {
+	width:auto;
+}
+.tlp-quiz-item-correct-col {
+	width:60px;
+	text-align:center;
+}
+.tlp-quiz-item-outcome-col {
+	width:100px;
+}
+.tlp-quiz-item-delete-col {
+	width:80px;
+	text-align:center;
+}
+.tlp-quiz-image-add-button,
+.tlp-quiz-image-delete-button {
+	width:36px;
+	height:32px;
+	float:left;
+	cursor:pointer;
+}
+.tlp-quiz-image-add-button:hover,
+.tlp-quiz-image-delete-button:hover {
+	opacity:0.5;
+}
+.tlp-quiz-image-delete-button[disabled],
+.tlp-quiz-image-delete-button[disabled]:hover {
+	opacity:0.3;
+}
+.tlp-quiz-image-add-button {
+	background-image: url('../img/progress_quiz_plus.png');
+}
+.tlp-quiz-image-delete-button {
+	background-image: url('../img/progress_quiz_minus.png');
+}
+input[type="radio"].tlp-quiz-item-correct {
+	display:none;
+}
+.tlp-quiz-item-correct-label{
+	width:29px;
+	height:31px;
+	cursor:pointer;
+	display:inline-block;
+}
+.tlp-quiz-item-correct-label:hover {
+	opacity:0.5;
+}
+.tlp-quiz-item-correct+label.tlp-quiz-item-correct-label {
+	background-image: url('../img/progress_quiz_uncheck.png');
+}
+.tlp-quiz-item-correct:checked+label.tlp-quiz-item-correct-label {
+	background-image: url('../img/progress_quiz_check.png');
+}
+.tlp-float-right {
+	float:right;
+}
+.tlp-quiz-grade-outcome-delete-button {
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+.tlp-quiz-segment-outcome-delete-button {
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+.tlp-replace-choice-link{
+	color:red;
+	float:right;
+	text-decoration:underline;
+	font-style:italic;
+	cursor:pointer;
+	font-size:12px;
+}
+.tlp-replace-choice-link:hover{
+	opacity:0.5;
+}
+/* -------------------------- end quiz definition ------------------------- */
+/* -------------------------- header toggle ------------------------- */
+.tlp-setting-question-header {
+	margin:0;
+	padding:5px 10px 5px 15px;
+	font-size:15px;
+	background-repeat: no-repeat;
+	background-position:10px 50%;
+	height:auto;
+	min-height:30px;
+	cursor:pointer;
+}
+.tlp-view-toggle-block {
+	float:right;
+	margin-top:3px;
+}
+.tlp-view-toggle-block input {
+	visibility:hidden;
+}
+.tlp-question-opened{
+	height:auto;
+	overflow:visible;
+}
+.tlp-setting-question-block {
+	background-color:#f9f9f9;
+	padding:5px 20px;
+	margin-bottom:10px;
+	position:relative;
+}
+.tlp-setting-question-block.tlp-question-opened{
+	background-color: #f1f1f1;
+}
+/* -------------------------- END header toggle ------------------------- */
+/* -------------------------- MCE insert dialog ------------------------- */
+.tlp-insert-submit-row {
+padding: 8px 16px;
+background: #fcfcfc;
+border-top: 1px solid #dfdfdf;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+}
+.tlp-insert-cancel-container {
+line-height: 25px;
+float: left;
+}
+.tlp-insert-submit-container {
+float: right;
+}
+#tlp-insert-backdrop {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(80, 80, 80, 0.5);
+z-index: 99999999;
+}
+#tlp-insert-wrap {
+display: none;
+background-color: #fefefe;
+-webkit-box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+width: 500px;
+overflow: hidden;
+margin-left: -250px;
+margin-top: -125px;
+position: fixed;
+top: 50%;
+left: 50%;
+z-index: 99999999;
+}
+#tlp-insert-form {
+position:relative;
+height:100%;
+}
+#tlp-insert-title {
+background-color: #fcfcfc;
+border-bottom: 1px solid #dfdfdf;
+height: 36px;
+font-size: 18px;
+font-weight: 600;
+line-height: 36px;
+padding: 0 36px 0 16px;
+top: 0;
+right: 0;
+left: 0;
+}
+#tlp-insert-close {
+color: #666;
+padding: 0;
+position: absolute;
+top: 0;
+right: 0;
+width: 36px;
+height: 36px;
+text-align: center;
+background: none;
+border: none;
+cursor: pointer;
+}
+#tlp-insert-close:before {
+font: normal 20px/36px 'dashicons';
+vertical-align: top;
+speak: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+width: 36px;
+height: 36px;
+content: '\f158';
+}
+input[type="submit"].tlp-insert-button{
+background-color:#fcc302;
+border: none;
+padding: 5px 10px;
+color: white;
+border-radius: 5px;
+box-shadow: 0 0 3px 3px #f1f1f1;
+cursor:pointer;
+font-size:12px;
+line-height:18px;
+text-align: center;
+display:inline-block;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.tlp-insert-button:hover{
+background-color:#00a5b3;
+}
+#tlp-insert-content {
+padding: 0 16px 57px;
+}
+.tlp-insert-options {
+padding:10px 0;
+}
+#tlp-post-id {
+	max-width:100%;
+}
+#tlp-insert-wrap{
+	font-size:13px;
+}
+#tlp-insert-wrap ul{
+	margin:13px 0;
+}
+#tlp-insert-wrap select{
+	padding: 2px;
+    line-height: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    width: auto;
+	display:inline-block;
+}
+#tlp-insert-wrap label,
+#tlp-insert-wrap input[type="text"]{
+	display:inline-block;
+	margin:0;
+	width:auto;
+}
+#tlp-insert-wrap label{
+	font-weight:normal;
+}
+#tlp-insert-wrap td{
+	vertical-align: middle;
+	padding:0;
+}
+#tlp-progress-type-select{
+	max-width: 170px;
+}
+.tlp-mce-complete-button-disabled-option{
+	color:#888888;
+	position:relative;
+}
+.tlp-mce-objective-selection-container{
+	max-height:200px;
+	overflow:auto;
+}
+/* -------------------------- END MCE insert dialog ------------------------- */
+/* -------------------------- inline help text used in <table> ------------------------- */
+.tlp-inline-help-text {
+	background-color: #eafdfd;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+	margin: 10px;
+	display: inline-block;
+	font-size:12px;
+}
+/* -------------------------- END inline help text used in <table> ------------------------- */
+
+/* -------------------------- auto-complete ------------------------- */
+.tlp-tag-container {
+	border: 1px solid #e4e4e4;
+	padding: 5px;
+	background-color:white;
+}
+.tlp-tag,
+.tlp-option-input {
+	border: 1px solid #e4e4e4;
+	display:inline-block;
+	padding:5px;
+	margin:2px;
+	font-size:13px;
+}
+.tlp-tag-invalid {
+	background-color:#ffaaaa;
+	position:relative;
+}
+.tlp-tag-name {
+	margin-right:25px;
+}
+.tlp-tag-delete {
+	float:right;
+	width:15px;
+	height:15px;
+	color:#e4e4e4;
+	border:1px solid #e4e4e4;
+	line-height:15px;
+	font-size:12px;
+	text-align:center;
+	cursor:pointer;
+}
+.tlp-tag-delete:hover {
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-option-input {
+	min-width:170px;
+}
+ul.ui-widget-content.ui-autocomplete{
+	background-color:#fafafa;
+	background-image:none;
+}
+.tlp-option-combobox {
+position: relative;
+display: inline-block;
+}
+.tlp-option-combobox-full-width {
+position: relative;
+display:block;
+}
+.tlp-option-combobox-full-width .tlp-option-input {
+	width:100%;
+}
+ul.ui-autocomplete li.tlp-option{
+	font-weight:normal;
+}
+.tlp-option-highlight{
+	font-weight:bold;
+	text-decoration:underline;
+}
+/* normally included as part of form.css. Included duplicate here for optimize press, which skips form.css */
+.ui-autocomplete {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 10000;
+	border: 1px solid #5b9dd9;
+	-webkit-box-shadow: 0 1px 2px rgba( 30, 140, 190, 0.8 );
+	box-shadow: 0 1px 2px rgba( 30, 140, 190, 0.8 );
+	background-color: #fff;
+}
+.ui-autocomplete li {
+	margin-bottom: 0;
+	padding: 4px 10px;
+	white-space: nowrap;
+	text-align: left;
+}
+.ui-autocomplete li.ui-state-focus {
+	background-color: #ddd;
+	cursor: pointer;
+}
+/* -------------------------- END auto-complete ------------------------- */
+/* -------------------------- survey quiz ------------------------- */
+.tlp-quiz-settings-table{
+	border-collapse: collapse;
+}
+.tlp-quiz-settings-row{
+	margin-top: 10px;
+}
+.tlp-setting-outcome-block {
+    box-shadow: -2px 2px 5px 0px #e4e4e4;
+    margin: 10px 0;
+    border: 1px solid #e4e4e4;
+    height: auto;
+    min-height: 40px;
+    overflow: hidden;
+}
+.tlp-outcome-div {
+	box-shadow: -2px 2px 5px 0px #e4e4e4;
+	margin:10px 0;
+	border:1px solid #e4e4e4;
+	height:auto;
+	min-height:40px;
+	overflow:hidden;
+}
+.tlp-outcome-header {
+	margin:0;
+	background-color: white;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	padding:5px 10px 5px 15px;
+	font-size:15px;
+	background-repeat: no-repeat;
+	background-position:10px 50%;
+	height:auto;
+	min-height:30px;
+	cursor:pointer;
+}
+.tlp-view-toggle-block {
+	float:right;
+	margin-top:3px;
+}
+.tlp-view-toggle-block input {
+	visibility:hidden;
+}
+.tlp-item-opened{
+	height:auto;
+	overflow:visible;
+}
+.tlp-item-opened > .tlp-outcome-header {
+	background-color: #f1f1f1;
+}
+.tlp-pencil-icon {
+	background-image:url('../img/pencil-icon.png');
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	width:16px;
+	height:16px;
+	vertical-align:top;
+	display:inline-block;
+	cursor:text;
+}
+.tlp-name-display-block{
+	margin:0 40px 0 0;
+}
+.tlp-name-label{
+display:inline-block;
+margin-top:5px;
+}
+.tlp-name-edit{
+	display:none;
+}
+.tlp-header-table{
+	margin-top:3px;
+}
+.tlp-header-table td{
+	border:none;
+}
+.tlp-number-col{
+	width:100px;
+}
+.tlp-name-label-col .tlp-name-label{
+	margin:0;
+}
+.tlp-name-edit-col{
+	width:25px;
+	text-align: center;
+}
+.tlp-name-edit-col .pencil-icon{
+	margin:0;
+}
+.tlp-outcome-section {
+	padding:5px 10px;
+}
+.tlp-quiz-grade-outcome-delete-button[outcome-id="1"]{
+	display:none;
+}
+.tlp-quiz-segment-outcome-delete-button[outcome-id="1"]{
+	display:none;
+}
+.tlp-setting-customize-header{
+	width:10%;
+}
+.tlp-quiz-customize-table{
+	border-collapse: collapse;
+	width:100%;
+}
+.tlp-setting-customize-content{
+	width:40%;
+	text-align:center;
+}
+.tlp-setting-customize-content input{
+	width:90%;
+}
+/* -------------------------- END survey quiz ------------------------- */
+/* -------------------------- accordion header toggle ------------------------- */
+.tlp-setting-accordion-block {
+	box-shadow: -2px 2px 5px 0px #e4e4e4;
+    margin: 10px 0;
+    border: 1px solid #e4e4e4;
+    height: auto;
+    min-height: 40px;
+    overflow: hidden;
+	cursor:pointer;
+}
+.tlp-accordion-opened{
+	height:auto;
+	overflow:visible;
+}
+.tlp-setting-accordion-block.tlp-accordion-opened{
+	background-color: #f1f1f1;
+}
+.tlp-setting-accordion-header{
+	margin: 0;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    padding: 5px 10px 5px 40px;
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    height: auto;
+    min-height: 30px;
+    cursor: pointer;
+	background-image: url('../img/note-icon.png');
+}
+.tlp-accordion-opened > .tlp-setting-accordion-header {
+    background-color: #f1f1f1;
+}
+.tlp-setting-accordion-setting-section{
+    padding: 15px 30px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    background-color: white;
+}
+/* -------------------------- END header toggle ------------------------- */
+/* -------------------------- tab control ------------------------- */
+table.tlp-setting-container {
+	margin: 0;
+	background:#ffffff;
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: #e4e4e4;
+	width:100%;
+	border-spacing: 0;
+	background-image: url('../img/setting-bg.png');
+	background-repeat: repeat;
+	table-layout:fixed;
+	border-collapse: separate;
+}
+.tlp-setting-container > tbody > tr > td{
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+.tlp-setting-container > tbody > tr > td.tlp-setting-tab-active {
+	border-width: 0 0 1px 0;
+}
+.tlp-setting-tab-active label{
+	font-weight:bold;
+}
+.tlp-tab-label {
+	background-repeat: no-repeat;
+	margin:0;
+	padding:8px 0 8px 36px;
+	height:40px;
+	line-height:24px;
+	background-position:8px 50%;
+	overflow:hidden;
+	position:relative;
+	white-space: nowrap;
+	border-width:0;
+	border-style: solid;
+	border-color: #e4e4e4;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-color:white;
+}
+.tlp-setting-left-col {
+	width:150px;
+	padding:0;
+}
+.tlp-setting-tab-label-col {
+	height:40px;
+	cursor: pointer;
+}
+.tlp-setting-filler-row td {
+	border-width: 0 1px 0 0;
+}
+td.tlp-setting-content-cell {
+	vertical-align:top;
+	border-bottom-width:0px;
+}
+.tlp-setting-content-container {
+	padding:0 20px 0 20px;
+	font-size:14px;
+	box-sizing: border-box;
+}
+/* -------------------------- END tab control ------------------------- */
+/* -------------------------- note configuration ------------------------- */
+.tlp-setting-section-header {
+	color:#00a5b3;
+	font-size:18px;
+}
+.tlp-setting-section-sub-header {
+	font-weight: bold;
+	margin-bottom:5px;
+}
+.tlp-note-number-col{
+	width:25px;
+}
+.tlp-list {
+	list-style:disc;
+}
+.tlp-list li{
+	margin-left:20px;
+}
+.tlp-setting-note-usage{
+	background-color:#e4e4e4;
+	border: none;
+	padding: 10px 15px;
+	color:#000000;
+	border-radius: 5px;
+	cursor:pointer;
+	font-size:12px;
+}
+/* -------------------------- END note configuration ------------------------- */
+/* -------------------------- email customization ------------------------- */
+.tlp-setting-email-customization-block {
+	background-color:#f8f8f8;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d7d7d7;
+	padding:10px;
+	margin:10px 0;
+}
+/* -------------------------- END email customization ------------------------- */
+/* -------------------------- automation ------------------------- */
+.tlp-setting-section {
+	padding:20px 0;
+}
+.tlp-setting-border {
+	border-width:0 0 1px 0;
+	border-color:#e4e4e4;
+	border-style:solid;
+}
+/* -------------------------- END automation ------------------------- */
+/* -------------------------- tag refresh ------------------------- */
+.tlp-refresh-tag-trigger-container{
+position: absolute;
+top: 50%;
+right: 8px;
+margin-top: -8px;
+}
+.tlp-refresh-tag-trigger{
+width: 16px;
+height: 16px;
+background-image: url('../img/refresh.png');
+background-repeat: no-repeat;
+}
+.tlp-refresh-tag-trigger:hover{
+	opacity:0.5;
+}
+.tlp-tooltip-display{
+	position: absolute;
+	background-color: #e4e4e4;
+	color:#000000;
+	width: 200px;
+	left: 100%;
+	bottom: 0;
+	padding: 10px;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	opacity:0;
+	z-index:999;
+}
+/* -------------------------- END tag refresh ------------------------- */
+/* -------------------------- highlight shortcodes ------------------------- */
+.tlp-shortcode-hightlight{
+	color:green;
+	background-color: #eafdfd;
+	padding: 5px;
+	border: 1px solid #e4e4e4;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+	display:inline-block;
+}
+/* -------------------------- END highlight shortcodes ------------------------- */
+/* -------------------------- certificate preview ------------------------- */
+.tlp-setting-certficiate-header-block{
+	margin:10px 0 30px 0;
+}
+.tlp-certificate-preview-container{
+	position:relative;
+	overflow:hidden;
+}
+.tlp-certificate-pdf-container{
+	width:100%;
+	height:100%;
+}
+.tlp-certificate-pdf-customization{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.tlp-certificate-preview-element{
+	position:absolute;
+	white-space:nowrap;
+	cursor:pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color:rgba(0,0,0,0.3);
+}
+.tlp-preview-text{
+	overflow:hidden;
+}
+.tlp-preview-label{
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:-11px;
+	left:-11px;
+	border-radius:20px;
+	background-color:#e4e4e4;
+	color:#000000;
+	font-size:16px;
+	line-height:20px;
+	text-align:center;
+	border:1px solid #222222;
+}
+.tlp-preview-noclick-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:999;
+}
+/* -------------------------- END certificate preview ------------------------- */
+/* ------------------------------ setting widget loading ------------------------- */
+#tlp-post-settings-main-container{
+	position:relative;
+}
+#tlp-post-settings-loading-wait{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:rgba(0,0,0,0.5);
+z-index:9999;
+color:#00a5b3;
+font-weight:700;
+font-size:60px;
+line-height:120px;
+text-align:center;
+padding-top:80px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+/* ------------------------------ END setting widget loading ------------------------- */
+/* ------------------------------ certificate element customization details ------------------------- */
+.tlp-certificate-customation-details{
+	border:1px solid #e4e4e4;
+	padding:10px;
+	margin:10px 0;
+}
+.tlp-small-delete-button {
+	background-color:#e4e4e4;
+	border: none;
+	padding:3px;
+	margin:0 0 5px 0;
+	color:#000000;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	float:right;
+}
+.tlp-small-delete-button:hover{
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-certificate-parameter-block{
+	display:inline-block;
+	padding:5px;
+	vertical-align:middle;
+}
+/* ------------------------------ END certificate element customization details ------------------------- */
+/* ------------------------------ per certificate display ------------------------- */
+.tlp-certificate-number-col{
+	width:25px;
+}
+/* -------------------------- user profile ----------------------------- */
+.tlp-profile-title-section{
+	padding: 20px 0;
+	border-width:0 0 1px 0;
+	border-style: solid;
+	border-color:#444444;
+}
+.tlp-profile-title{
+	font-weight:700;
+	font-size:24px;
+}
+.tlp-profile-container{
+	padding: 0 10px;
+	background-color:white;
+	margin: 20px 0;
+    max-width: 1024px;
+}
+.tlp-user-profile-progress-container{
+	margin: 10px 0;
+	padding: 5px;
+	border: 1px solid #e4e4e4;
+	max-height: 200px;
+	overflow: auto;
+}
+/* -------------------------- END user profile ----------------------------- */
+/* -------------------------- progress stats table ------------------------- */
+.tlp-user-profile-progress-table {
+	width:100%;
+}
+.tlp-user-profile-progress-table, .tlp-user-profile-progress-table td {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-width: 0;
+}
+.tlp-user-profile-progress-table td {
+	padding:5px;
+}
+tr.tlp-user-profile-progress-table-header-row{
+	font-weight:700;
+	background-color:#e4e4e4;
+}
+tr.tlp-progress-table-content-row:nth-child(odd){
+	background-color:#f0f0f0;
+}
+/* -------------------------- END progress stats table --------------------- */
+
+/* ------------------------------ Objective list drag-and-drop ------------------------- */
+.tlp-setting-list-order-move{
+width:16px;
+height:16px;
+cursor:move;
+background-image: url('../img/move-icon.png');
+background-repeat:no-repeat;
+background-size:cover;
+margin:0 auto;
+}
+.tlp-objective-drop-placeholder{
+margin:20px 0;
+border:3px dotted #4e4e4e;
+}
+/* ------------------------------ END Objective list drag-and-drop ------------------------- */
+
+/* ------------------------------ Quiz question drag-and-drop ------------------------- */
+.tlp-setting-quiz-order-move{
+position:absolute;
+top:26px;
+left:6px;
+width:20px;
+height:20px;
+cursor:move;
+background-image: url('../img/move-icon.png');
+background-repeat:no-repeat;
+background-size:cover;
+margin:0 auto;
+}
+.tlp-question-drop-placeholder{
+margin:20px 0;
+border:3px dotted #4e4e4e;
+}
+/* ------------------------------ END Objective list drag-and-drop ------------------------- */

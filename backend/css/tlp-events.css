@@ -1,0 +1,461 @@
+/* ----------------------------------------------- main display tab and general styling ------------------------------- */
+table.tlp-setting-container {
+	margin: 40px 0 0 0;
+	background:#ffffff;
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: #e4e4e4;
+	width:1000px;
+	border-spacing: 0;
+	background-image: url('../img/setting-bg.png');
+	background-repeat: repeat;
+	table-layout:fixed;
+	border-collapse: separate;
+}
+.tlp-setting-container > tbody > tr > td{
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+.tlp-setting-left-col {
+	width:120px;
+	padding:0;
+}
+.tlp-setting-title-cell {
+	padding:20px 0 20px 20px;
+}
+.tlp-setting-title {
+	color:#00a5b3;
+	font-size:30px;
+	margin: 0px 0 20px 0;
+}
+.tlp-setting-section-help-text {
+	font-style: italic;
+	font-size:12px;
+}
+.tlp-info-icon {
+	background-image:url('../img/info-icon.png');
+	background-repeat: no-repeat;
+	background-position:0 50%;
+	width:16px;
+	height:16px;
+	vertical-align:top;
+	display:inline-block;
+}
+.tlp-setting-tab-label-col {
+	height:40px;
+	cursor: pointer;
+}
+.tlp-setting-container > tbody > tr > td.tlp-setting-tab-active {
+	border-width: 0 0 1px 0;
+}
+.tlp-setting-tab-active label{
+	font-weight:bold;
+}
+.tlp-tab-label {
+	background-repeat: no-repeat;
+	margin:0;
+	padding:8px 0 8px 36px;
+	height:40px;
+	line-height:24px;
+	background-position:8px 50%;
+	overflow:hidden;
+	position:relative;
+	white-space: nowrap;
+	border-width:0;
+	border-style: solid;
+	border-color: #e4e4e4;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-color:white;
+}
+td.tlp-setting-content-cell {
+	vertical-align:top;
+	border-bottom-width:0px;
+}
+.tlp-setting-content-container {
+	padding:0 20px 20px 20px;
+	font-size:14px;
+	box-sizing: border-box;
+}
+.tlp-setting-filler-row td {
+	border-width: 0 1px 0 0;
+}
+.tlp-setting-section-header {
+	color:#00a5b3;
+	font-size:18px;
+}
+.tlp-setting-section-sub-header {
+	font-weight: bold;
+	margin-bottom:5px;
+}
+.tlp-configure-element {
+	padding:0 10px 0 10px;
+	border-style:solid;
+	border-color:#e4e4e4;
+	border-width:5px 1px 1px 1px;
+	margin:20px 0;
+}
+.tlp-setting-configure-block {
+	margin:10px 0;
+}
+.tlp-setting-configure-table {
+	width:100%;
+}
+.tlp-setting-configure-table, .tlp-setting-configure-table td {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-width: 0;
+}
+.tlp-inline-help-text {
+	background-color: #eafdfd;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+	margin: 10px;
+	display: inline-block;
+	font-size:12px;
+}
+.tlp-setting-section {
+	padding:15px 0;
+}
+/* ----------------------------------------------- END main display tab and general styling ------------------------------- */
+
+/* -------------------------- auto-complete ------------------------- */
+.tlp-tag-container,
+.tlp-page-container{
+	border: 1px solid #e4e4e4;
+	padding: 5px;
+	background-color:white;
+}
+.tlp-tag,
+.tlp-page,
+.tlp-option-input {
+	border: 1px solid #e4e4e4;
+	display:inline-block;
+	padding:5px;
+	margin:2px;
+	font-size:13px;
+}
+.tlp-tag-invalid,
+.tlp-page-invalid {
+	background-color:#ffaaaa;
+	position:relative;
+}
+.tlp-tag-name,
+.tlp-page-name {
+	margin-right:25px;
+}
+.tlp-tag-delete,
+.tlp-page-delete {
+	float:right;
+	width:15px;
+	height:15px;
+	color:#e4e4e4;
+	border:1px solid #e4e4e4;
+	line-height:15px;
+	font-size:12px;
+	text-align:center;
+	cursor:pointer;
+}
+.tlp-tag-delete:hover,
+.tlp-page-delete:hover {
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-option-input {
+	min-width:170px;
+}
+ul.ui-widget-content.ui-autocomplete{
+	background-color:#fafafa;
+	background-image:none;
+}
+.tlp-option-combobox {
+position: relative;
+display: inline-block;
+}
+.tlp-option-combobox-full-width {
+position: relative;
+display:block;
+}
+.tlp-option-combobox-full-width .tlp-option-input {
+	width:100%;
+}
+ul.ui-autocomplete li.tlp-option{
+	font-weight:normal;
+}
+.tlp-option-highlight{
+	font-weight:bold;
+	text-decoration:underline;
+}
+/* normally included as part of form.css. Included duplicate here for optimize press, which skips form.css */
+.ui-autocomplete {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 10000;
+	border: 1px solid #5b9dd9;
+	-webkit-box-shadow: 0 1px 2px rgba( 30, 140, 190, 0.8 );
+	box-shadow: 0 1px 2px rgba( 30, 140, 190, 0.8 );
+	background-color: #fff;
+}
+.ui-autocomplete li {
+	margin-bottom: 0;
+	padding: 4px 10px;
+	white-space: nowrap;
+	text-align: left;
+}
+.ui-autocomplete li.ui-state-focus {
+	background-color: #ddd;
+	cursor: pointer;
+}
+/* -------------------------- END auto-complete ------------------------- */
+/* -------------------------- tag refresh ------------------------- */
+.tlp-refresh-tag-trigger-container{
+position: absolute;
+top: 50%;
+right: 8px;
+margin-top: -8px;
+}
+.tlp-refresh-tag-trigger{
+width: 16px;
+height: 16px;
+background-image: url('../img/refresh.png');
+background-repeat: no-repeat;
+}
+.tlp-refresh-tag-trigger:hover{
+	opacity:0.5;
+}
+.tlp-tooltip-display{
+	position: absolute;
+	background-color: #e4e4e4;
+	color:#000000;
+	width: 200px;
+	left: 100%;
+	bottom: 0;
+	padding: 10px;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	opacity:0;
+	z-index:999;
+}
+/* -------------------------- END tag refresh ------------------------- */
+/* -------------------------- Wait overlay ------------------------- */
+#tlp-wait-overlay{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:fixed;
+	bottom:0;
+	right:0;
+	display:none;
+	background-color:rgba(80,80,80,0.5);
+	z-index:1;
+}
+#tlp-wait-overlay .tlp-wait-content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-64px 0 0 -64px;
+}
+/* -------------------------- END Wait overlay ------------------------- */
+
+/* -------------------------- Button ------------------------- */
+.tlp-button{
+	background-color:#fcc302;
+	border: none;
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	line-height:18px;
+	text-align: center;
+	display:inline-block;
+	text-decoration:none;
+}
+.tlp-button:hover{
+	background-color:#00a5b3;
+}
+.tlp-save-button{
+	background-color:#fcc302;
+	border: none;
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	line-height:18px;
+	text-align: center;
+	display:inline-block;
+	text-decoration:none;
+	width:100px;
+	float:right;
+}
+.tlp-save-button:hover{
+	background-color:#00a5b3;
+}
+.tlp-delete-button{
+	background-color:#e4e4e4;
+	border: none;
+	padding: 10px 15px;
+	color:#000000;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	display:inline-block;
+	float:left;
+	text-align:center;
+}
+.tlp-delete-button:hover{
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-cancel-button{
+	background-color:#e4e4e4;
+	border: none;
+	padding: 10px 15px;
+	color:#000000;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	display:block;
+	width:80px;
+	margin:0 auto;
+	text-align:center;
+}
+.tlp-cancel-button:hover{
+	background-color:#ff1111;
+	color:#ffffff;
+}
+.tlp-edit-button{
+	background-color:#fcc302;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor:pointer;
+	font-size:12px;
+	line-height:18px;
+	text-align: center;
+	text-decoration:none;
+	width:120px;
+	padding:10px 0;
+	float:right;
+}
+.tlp-edit-button:hover{
+	background-color:#00a5b3;
+}
+/* -------------------------- END Button ------------------------- */
+
+/* -------------------------- Event setup specific ------------------------- */
+.tlp-event-container {
+	border:1px solid #e4e4e4;
+	background-color:#ffffff;
+	margin:20px 0;
+}
+.tlp-event-readonly-view {
+	padding:15px;
+}
+.tlp-event-edit-view{
+	padding:0 15px;
+}
+.tlp-event-header{
+	background-color:#f1f1f1;
+	height:40px;
+	padding:0 0 0 20px;
+	line-height:40px;
+}
+.tlp-event-header-desc{
+	color:#00a5b3;
+	font-weight:700;
+}
+.tlp-event-readonly-edit-col{
+	width:80px;
+}
+.tlp-event-readonly-desc{
+	margin:5px 0;
+}
+.tlp-event-readonly-desc ul{
+	margin: 10px 0 0 0;
+	padding: 0 0 0 20px;
+	list-style:disc;
+}
+.tlp-event-objective-list-container{
+	margin:10px 0;
+	padding:15px;
+	border:1px solid #e4e4e4;
+}
+.tlp-event-objective-list-disabled-option{
+	color:#888888;
+	position:relative;
+}
+.tlp-event-readonly-desc-trigger-col{
+	width:45%;
+	vertical-align:top;
+}
+.tlp-event-readonly-desc-action-col{
+	width:45%;
+	vertical-align:top;
+}
+.tlp-event-readonly-desc-arrow-col{
+	text-align:center;
+}
+.tlp-readonly-error{
+	color:#ff0000;
+}
+.tlp-event-readonly-arrow{
+	width:29px;
+	height:20px;
+	margin:0 auto;
+	background-image: url('../img/event-arrow.png');
+}
+/* -------------------------- Event setup specific ------------------------- */
+
+/* ----------------------------------------------- log display ------------------------------- */
+.tlp-filter-selection-table{
+	border-collapse:collapse;
+	border:none;
+}
+.tlp-filter-selection-table td, .tlp-filter-selection-table th{
+	border:none;
+}
+.tlp-duplicate-scroll-bar {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	height:20px;
+}
+.tlp-duplicate-scroll-bar div {
+	height:20px;
+}
+.tlp-log-summary-table-container {
+	overflow:auto;
+	width:100%;
+}
+.tlp-log-summary-table {
+	border-style:solid solid none solid;
+	border-width:1px 1px 0 1px;
+	border-color:#e4e4e4;
+	border-collapse:collapse;
+	min-width:100%;
+}
+.tlp-log-summary-table td, .tlp-log-summary-table th{
+	border-style:none none solid none;
+	border-width:0 0 1px 0;
+	border-color:#e4e4e4;
+	vertical-align:middle;
+	text-align:center;
+	padding:5px;
+}
+.tlp-log-summary-table td.tlp-event-log-trigger-col{
+	text-align:left;
+}
+.tlp-log-summary-table td.tlp-event-log-action-col{
+	text-align:left;
+}
+/* ----------------------------------------------- end log display ------------------------------- */

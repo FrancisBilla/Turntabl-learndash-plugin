@@ -1,0 +1,501 @@
+/* ----------------------------------------------- main display tab and general styling ------------------------------- */
+table.tlp-setting-container {
+	margin: 40px 0 0 0;
+	background:#ffffff;
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: #e4e4e4;
+	width:1000px;
+	border-spacing: 0;
+	background-image: url('../img/setting-bg.png');
+	background-repeat: repeat;
+	table-layout:fixed;
+	border-collapse: separate;
+}
+.tlp-setting-container > tbody > tr > td{
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+.tlp-setting-left-col {
+	width:150px;
+	padding:0;
+}
+.tlp-setting-title-cell {
+	padding:20px 0 20px 20px;
+}
+.tlp-setting-title {
+	color:#00a5b3;
+	font-size:30px;
+	margin: 0px 0 20px 0;
+}
+.tlp-setting-section-help-text {
+	font-style: italic;
+	font-size:12px;
+}
+.tlp-info-icon {
+	background-image:url('../img/info-icon.png');
+	background-repeat: no-repeat;
+	background-position:0 50%;
+	width:16px;
+	height:16px;
+	vertical-align:top;
+	display:inline-block;
+}
+.tlp-setting-tab-label-col {
+	height:40px;
+	cursor: pointer;
+}
+.tlp-setting-container > tbody > tr > td.tlp-setting-tab-active {
+	border-width: 0 0 1px 0;
+}
+.tlp-setting-tab-active label{
+	font-weight:bold;
+}
+.tlp-tab-label {
+	background-repeat: no-repeat;
+	margin:0;
+	padding:8px 0 8px 36px;
+	height:40px;
+	line-height:24px;
+	background-position:8px 50%;
+	overflow:hidden;
+	position:relative;
+	white-space: nowrap;
+	border-width:0;
+	border-style: solid;
+	border-color: #e4e4e4;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-color:white;
+}
+td.tlp-setting-content-cell {
+	vertical-align:top;
+	border-bottom-width:0px;
+}
+.tlp-setting-content-container {
+	padding:0 20px 20px 20px;
+	font-size:14px;
+	box-sizing: border-box;
+}
+.tlp-setting-filler-row td {
+	border-width: 0 1px 0 0;
+}
+.tlp-setting-section-header {
+	color:#00a5b3;
+	font-size:18px;
+}
+.tlp-setting-section-sub-header {
+	font-weight: bold;
+	margin-bottom:5px;
+}
+.tlp-configure-element {
+	padding:0 10px 0 10px;
+	border-style:solid;
+	border-color:#e4e4e4;
+	border-width:5px 1px 1px 1px;
+	margin:20px 0;
+}
+.tlp-setting-configure-block {
+	margin:10px 0;
+}
+.tlp-setting-configure-table {
+	width:100%;
+}
+.tlp-setting-configure-table, .tlp-setting-configure-table td {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-width: 0;
+}
+.tlp-inline-help-text {
+	background-color: #eafdfd;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+	margin: 10px;
+	display: inline-block;
+	font-size:12px;
+}
+.tlp-setting-section {
+	padding:15px 30px;
+	background-color:white;
+}
+/* ----------------------------------------------- END main display tab and general styling ------------------------------- */
+/* ----------------------------------------------- note reply display ------------------------------- */
+.tlp-filter-selection-table{
+	border-collapse:collapse;
+	border:none;
+}
+.tlp-filter-selection-table td, .tlp-filter-selection-table th{
+	border:none;
+}
+.tlp-backend-notes-display{
+display:block;
+border:1px solid #e4e4e4;
+border-radius:5px;
+padding:5px 10px;
+margin-bottom:10px;
+word-wrap:break-word;
+}
+.tlp-backend-notes-update-input-container{
+display:block;
+position:relative;
+width:100%;
+}
+.tlp-backend-notes-update-textarea{
+width:100%;
+}
+.tlp-backend-notes-update-input-wait{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:contain;
+background-repeat: no-repeat;
+background-position: 50%;
+display:none;
+opacity:0.5;
+filter: alpha(opacity=50);
+background-color:#e4e4e4;
+}
+.tlp-backend-notes-display-admin{
+	width:90%;
+	margin-left:5%;
+	background-color:#f8f8f8;
+}
+.tlp-backend-notes-display-user{
+	width:90%;
+}
+.tlp-backend-note-operation-container {
+	text-align: center;
+}
+.tlp-backend-notes-save-button,
+.tlp-backend-notes-cancel-button,
+.tlp-backend-notes-save-approve-button,
+.tlp-backend-notes-save-wo-approve-button,
+.tlp-backend-notes-reply-button,
+.tlp-backend-notes-ignore-button,
+.tlp-backend-notes-approve-button{
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	line-height:20px;
+	font-size:14px;
+	width:60px;
+	display:inline-block;
+    text-align:center;
+}
+.tlp-backend-notes-save-button,
+.tlp-backend-notes-reply-button,
+.tlp-backend-notes-approve-button,
+.tlp-backend-notes-save-approve-button,
+.tlp-backend-notes-save-wo-approve-button {
+	background-color:#fcc302;
+	color: white;
+}
+.tlp-backend-notes-save-button,
+.tlp-backend-notes-reply-button,
+.tlp-backend-notes-save-approve-button {
+	float:right;
+}
+.tlp-backend-notes-approve-button,
+.tlp-backend-notes-save-approve-button,
+.tlp-backend-notes-save-wo-approve-button {
+	width: 165px;
+}
+.tlp-backend-notes-save-button:hover,
+.tlp-backend-notes-reply-button:hover,
+.tlp-backend-notes-approve-button:hover,
+.tlp-backend-notes-save-approve-button:hover,
+.tlp-backend-notes-save-wo-approve-button:hover {
+	background-color:#00a5b3;
+}
+.tlp-backend-notes-cancel-button,
+.tlp-backend-notes-ignore-button {
+	background-color:#e4e4e4;
+	color: #000000;
+	float:left;
+}
+.tlp-backend-notes-cancel-button:hover,
+.tlp-backend-notes-ignore-button:hover {
+	background-color:#ff1111;
+}
+.tlp-note-reply-content-row,
+.tlp-note-approve-content-row {
+position:relative;
+border:1px solid #e4e4e4;
+margin:10px 0;
+}
+.tlp-backend-note-reply-post-name {
+	background-color:#cfcfcf;
+	font-size:18px;
+	font-weight:700;
+	line-height:24px;
+	padding:5px 10px;
+}
+.tlp-backend-note-reply-note-status {
+	float: right;
+	position: relative;
+}
+.tlp-backend-note-reply-note-status-label {
+    width: 100%;
+    height: 0;
+    padding-top: 12%;
+    overflow: hidden;
+}
+.tlp-backend-note-reply-note-status-label:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 200px solid transparent;
+    border-right: 250px solid #00a5b3;
+}
+/* need action */
+.tlp-note-reply-content-row[tlp-note-status="0"][tlp-note-approve-status="0"] .tlp-backend-note-reply-note-status-label:after,
+.tlp-note-reply-content-row[tlp-note-approve-status="1"] .tlp-backend-note-reply-note-status-label:after {
+    border-right: 250px solid #D3028F;
+}
+.tlp-backend-note-reply-note-status-text {
+	top: 0;
+	right: 0;
+	position: absolute;
+	color: #ffffff;
+	font-size:18px;
+	padding:5px 10px;
+	font-style: italic;
+}
+.tlp-backend-note-reply-note-name {
+	background-color:#e4e4e4;
+	font-size:16px;
+	font-weight:700;
+	line-height:20px;
+	padding:5px 10px;
+}
+.tlp-backend-note-reply-user-link {
+	font-size:16px;
+	font-weight:700;
+	line-height:20px;
+	padding:5px 10px;
+	display: inline-block;
+}
+.tlp-backend-note-reply-time {
+	font-style: italic;
+	padding:6px 10px;
+	display: inline-block;
+	float: right;
+}
+.tlp-backend-note-reply-content {
+	padding:10px;
+}
+.tlp-note-reply-content-row .tlp-note-reply-inner-border {
+	border-width: 0 0 0 5px;
+	border-style:solid;
+}
+
+.tlp-backend-notes-ignore-button,
+.tlp-backend-notes-approve-button,
+.tlp-backend-notes-save-approve-button,
+.tlp-backend-notes-save-wo-approve-button {
+	display:none;
+}
+.tlp-backend-notes-reply-operation-row{
+	margin-top:10px;
+	text-align: center;
+}
+/* need reply */
+.tlp-note-reply-content-row[tlp-note-status="0"] .tlp-note-reply-inner-border {
+	border-color: red;
+}
+/* only show the ignore button if the note needs reply */
+.tlp-note-reply-content-row[tlp-note-status="0"] .tlp-backend-notes-ignore-button{
+	display:block;
+}
+/* only show the 'approve without reply' button and the 'save and approve' button if the note needs approve */
+.tlp-note-reply-content-row[tlp-note-approve-status="1"] .tlp-backend-notes-approve-button,
+.tlp-note-reply-content-row[tlp-note-approve-status="1"] .tlp-backend-notes-save-approve-button,
+.tlp-note-reply-content-row[tlp-note-approve-status="1"] .tlp-backend-notes-save-wo-approve-button {
+	display:inline-block;
+}
+.tlp-note-reply-content-row[tlp-note-approve-status="1"] .tlp-backend-notes-save-button {
+	display: none;
+}
+/* replied or approved by admin */
+.tlp-note-reply-content-row[tlp-note-status="1"] .tlp-note-reply-inner-border {
+	border-color: green;
+}
+/* closed by admin */
+.tlp-note-reply-content-row[tlp-note-status="2"] .tlp-note-reply-inner-border{
+	border-color: yellow;
+}
+/* no need to reply or approve */
+.tlp-note-reply-content-row[tlp-note-status="3"] .tlp-note-reply-inner-border {
+	border-color: blue;
+}
+/* admin-init notes */
+.tlp-note-reply-content-row[tlp-note-status="4"] .tlp-note-reply-inner-border{
+	border-color: darkcyan;
+}
+/* ----------------------------------------------- end note reply display ------------------------------- */
+/* ----------------------------------------------- admin init note display ------------------------------- */
+.tlp-backend-admin-init-confirm-button {
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	line-height:20px;
+	font-size:14px;
+	display:inline-block;
+    text-align:center;
+	background-color:#fcc302;
+	color: white;
+	float:right;
+}
+.tlp-backend-admin-init-confirm-button:hover {
+	background-color:#00a5b3;
+}
+.tlp-backend-admin-init-save-button,
+.tlp-backend-admin-init-cancel-button,
+.tlp-backend-admin-init-add-button{
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	line-height:20px;
+	font-size:14px;
+	width:120px;
+	display:inline-block;
+    text-align:center;
+}
+.tlp-backend-admin-init-save-button,
+.tlp-backend-admin-init-add-button {
+	background-color:#fcc302;
+	color: white;
+	float:right;
+}
+.tlp-backend-admin-init-save-button:hover,
+.tlp-backend-admin-init-add-button:hover {
+	background-color:#00a5b3;
+}
+.tlp-backend-admin-init-cancel-button{
+	background-color:#e4e4e4;
+	color: #000000;
+	float:left;
+}
+.tlp-backend-admin-init-cancel-button:hover{
+	background-color:#ff1111;
+}
+.tlp-admin-init-content-row {
+position:relative;
+border:1px solid #e4e4e4;
+margin:10px 0;
+}
+.tlp-backend-admin-init-operation-row{
+	margin:10px 0;
+}
+.tlp-backend-admin-init-display{
+display:block;
+border:1px solid #e4e4e4;
+border-radius:5px;
+padding:5px 10px;
+margin-bottom:10px;
+word-wrap:break-word;
+}
+.tlp-backend-admin-init-input-container{
+display:block;
+position:relative;
+width:100%;
+}
+.tlp-backend-admin-init-content {
+padding:0 15px 0 15px;
+}
+.tlp-backend-admin-init-textarea{
+width:100%;
+}
+.tlp-backend-notes-update-input-wait{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:contain;
+background-repeat: no-repeat;
+background-position: 50%;
+display:none;
+opacity:0.5;
+filter: alpha(opacity=50);
+background-color:#e4e4e4;
+}
+.tlp-backend-admin-init-display-admin{
+	width:90%;
+	margin-left:5%;
+	background-color:#f8f8f8;
+}
+.tlp-backend-admin-init-display-user{
+	width:90%;
+}
+.tlp-backend-admin-init-user-link{
+	float:left;
+	line-height:30px;
+	font-weight:700;
+	font-size:14px;
+}
+.tlp-backend-admin-init-header-row{
+	padding:10px 20px;
+}
+#tlp-backend-admin-init-change-selection{
+	float:right;
+	font-weight:400;
+}
+.tlp-admin-init-create-header{
+	margin:10px 0;
+}
+.tlp-setting-admin-init-header-block {
+	padding:10px 0 20px 0;
+	border-bottom:1px solid #e4e4e4;
+}
+/* ----------------------------------------------- END admin init note display ------------------------------- */
+
+/* ----------------------------------------------- Attachment ------------------------------- */
+.tlp-notes-attachment-add{
+	float: right;
+	font-size: 14px;
+	font-style: italic;
+	cursor:pointer;
+}
+.tlp-notes-attachment-add:hover{
+	opacity:0.8;
+}
+.tlp-notes-attachment-clear{
+	clear:both;
+}
+.progress-note-attachment-file-input{
+	display:block;
+}
+.tlp-notes-display-attachment-link{
+background-image: url('../img/attachment-icon.png');
+background-repeat:no-repeat;
+background-position:0 50%;
+background-size:20px 20px;
+padding-left:30px;
+}
+.tlp-notes-attachment-delete{
+display:inline-block;
+width: 16px;
+height: 16px;
+color: #e4e4e4;
+border: 1px solid #e4e4e4;
+line-height: 16px;
+font-size: 14px;
+text-align: center;
+cursor: pointer;
+}
+.tlp-notes-attachment-delete:hover{
+background-color: #ff1111;
+color: #ffffff;
+}
+/* ----------------------------------------------- END Attachment ------------------------------- */

@@ -30,3 +30,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Copyright 2005-2015 Automatic, Inc.
 */
+
+if (! class_exists('TurntablLearndashPlugin')){
+    class TurntablLearndashPlugin{
+        /// CONSTANTS
+        const VERSION = '1.0.0';
+        const HELP_URL = 'https://github.com/francisbilla/Turntabl-learndash-plugin/issue';
+        const CSS_FOLDER = 'TurntablLearndashPlugin-css';
+
+        const SETTING_KEY_GENERAL = '_TurntablLearndashPlugin_setting_general';
+        
+        //CACHE 
+        const CACHE_PERIOD = 86400;
+
+        public static $PLUGIN_URI ='';
+    }
+}

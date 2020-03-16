@@ -1,0 +1,445 @@
+/* ----------------------------------------------- main display tab and general styling ------------------------------- */
+table.tlp-setting-container {
+	margin: 40px 0 0 0;
+	background:#ffffff;
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: #e4e4e4;
+	width:1000px;
+	border-spacing: 0;
+	background-image: url('../img/setting-bg.png');
+	background-repeat: repeat;
+	table-layout:fixed;
+	border-collapse: separate;
+}
+.tlp-setting-container > tbody > tr > td{
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+.tlp-setting-left-col {
+	width:150px;
+	padding:0;
+}
+.tlp-setting-title-cell {
+	padding:20px 0 20px 20px;
+}
+.tlp-setting-title {
+	color:#00a5b3;
+	font-size:30px;
+	margin: 0px 0 20px 0;
+}
+.tlp-setting-section-help-text {
+	font-style: italic;
+	font-size:12px;
+}
+.tlp-info-icon {
+	background-image:url('../img/info-icon.png');
+	background-repeat: no-repeat;
+	background-position:0 50%;
+	width:16px;
+	height:16px;
+	vertical-align:top;
+	display:inline-block;
+}
+.tlp-setting-tab-label-col {
+	height:40px;
+	cursor: pointer;
+}
+.tlp-setting-container > tbody > tr > td.tlp-setting-tab-active {
+	border-width: 0 0 1px 0;
+}
+.tlp-setting-tab-active label{
+	font-weight:bold;
+}
+.tlp-tab-label {
+	background-repeat: no-repeat;
+	margin:0;
+	padding:8px 0 8px 36px;
+	height:40px;
+	line-height:24px;
+	background-position:8px 50%;
+	overflow:hidden;
+	position:relative;
+	white-space: nowrap;
+	border-width:0;
+	border-style: solid;
+	border-color: #e4e4e4;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-color:white;
+}
+td.tlp-setting-content-cell {
+	vertical-align:top;
+	border-bottom-width:0px;
+}
+.tlp-setting-content-container {
+	font-size:14px;
+	box-sizing: border-box;
+}
+.tlp-setting-filler-row td {
+	border-width: 0 1px 0 0;
+}
+.tlp-setting-section-header {
+	color:#00a5b3;
+	font-size:18px;
+}
+.tlp-setting-section-sub-header {
+	font-weight: bold;
+	margin-bottom:5px;
+}
+.tlp-configure-element {
+	padding:0 10px 0 10px;
+	border-style:solid;
+	border-color:#e4e4e4;
+	border-width:5px 1px 1px 1px;
+	margin:20px 0;
+}
+.tlp-setting-configure-block {
+	margin:10px 0;
+}
+.tlp-setting-configure-table {
+	width:100%;
+}
+.tlp-setting-configure-table, .tlp-setting-configure-table td {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-width: 0;
+}
+.tlp-inline-help-text {
+	background-color: #eafdfd;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+	margin: 10px;
+	display: inline-block;
+	font-size:12px;
+}
+.tlp-setting-section {
+	padding:15px 30px;
+	background-color:white;
+}
+.tlp-setting-border {
+	border-width:0 0 1px 0;
+	border-color:#e4e4e4;
+	border-style:solid;
+}
+.tlp-sub-setting-container {
+	margin: 20px 0 0 0;
+	background:#ffffff;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+	border-color: #e4e4e4;
+	width:100%;
+	background:transparent;
+	border-spacing: 0;
+	table-layout:fixed;
+}
+.tlp-sub-setting-top-row {
+	height:40px;
+}
+.tlp-sub-setting-container td{
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+td.tlp-sub-setting-tab-label-col {
+	cursor: pointer;
+	border-width: 1px 1px 1px 0;
+	width:180px;
+	padding:0;
+}
+.tlp-sub-tab-label {
+	background-repeat: no-repeat;
+	margin:0;
+	padding:8px 0 8px 36px;
+	height:40px;
+	line-height:24px;
+	overflow:hidden;
+	position:relative;
+	white-space: nowrap;
+	border-width:0;
+	border-style: solid;
+	border-color: #e4e4e4;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-color:white;
+}
+td.tlp-sub-setting-tab-active {
+	border-width: 1px 1px 0 0;
+}
+td.tlp-sub-setting-content-cell {
+	border-width: 0 1px 0 0;
+}
+.tlp-sub-setting-content-container {
+	width:100%;
+	font-size:14px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+td.tlp-sub-setting-filler-col {
+	border-width: 0 0 1px 0;
+}
+.tlp-button,
+a.tlp-button{
+	background-color:#fcc302;
+	border: none;
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	cursor:pointer;
+	font-size:12px;
+	line-height:18px;
+	text-align: center;
+	display:inline-block;
+	text-decoration:none;
+}
+.tlp-button:hover,
+a.tlp-button:hover{
+	background-color:#00a5b3;
+}
+.tlp-dashboard-page-notice-row{
+	margin-top:20px;
+}
+/* ----------------------------------------------- END main display tab and general styling ------------------------------- */
+/* ----------------------------------------------- page tree styling ------------------------------- */
+.tlp-page-tree-indent {
+	margin-left: 30px;
+}
+.tlp-dashboard-page-content-wrapper {
+	margin-top: 20px;
+	display: none;
+}
+.tlp-dashboard-page-header {
+	border: 1px solid #c7c7c7;
+	padding: 10px 12px;
+	font-weight: bold;
+}
+.tlp-dashboard-page-row {
+	border: 1px solid #c7c7c7;
+	padding: 12px 0;
+	cursor:pointer;
+}
+.tlp-dashboard-page-row-wrapper-active .tlp-dashboard-page-row {
+	background-color: #f6f6f6;
+	border-width: 1px 1px 0 1px;
+}
+.tlp-page-tree-indent .tlp-dashboard-page-row {
+	margin-top: 0;
+	border-top-width: 0;
+}
+.tlp-dashboard-page-title {
+	padding-left: 15px;
+}
+.tlp-dashboard-page-title a {
+	text-decoration: none;
+}
+.tlp-dashboard-page-attribute{
+	padding-right: 15px;
+	float:right;
+}
+/* ----------------------------------------------- END page tree styling ------------------------------- */
+/* ----------------------------------------------- page detail on overview styling ------------------------------- */
+.tlp-dashboard-page-detail {
+	display:none;
+	background-color: #f6f6f6;
+	border: 1px solid #c7c7c7;
+	padding: 12px 0;
+	padding: 15px 20px;
+}
+.tlp-dashboard-page-row-wrapper-active .tlp-dashboard-page-detail {
+	display:block;
+}
+.tlp-dashboard-page-detail-title {
+	font-weight: bold;
+}
+.tlp-dashboard-page-detail-progress,
+.tlp-dashboard-page-detail-quiz {
+	margin: 10px 0;
+}
+.tlp-dashboard-page-detail-progress ul,
+.tlp-dashboard-page-detail-quiz ul,
+.tlp-objective-completion-desc ul{
+	list-style: disc;
+	padding-left: 40px;
+
+}
+.progress_stats_tlp_progress_bar_chart {
+	width: 100%;
+	height: 30px;
+}
+.progress_stats_tlp_progress_bar_chart > .tlp_progress_bar_overlay{
+	background-color: #00A5B3;
+}
+.progress_stats_tlp_progress_bar_chart > .tlp_progress_bar_percentage{
+	line-height: 30px;
+	left: 50%;
+}
+.progress_stats_tlp_progress_bar_chart > .tlp_progress_bar_border_overlay{
+	border: 1px solid #00A5B3;
+}
+.tlp-dashboard-page-detail-quiz-pass-bar-chart {
+	width: 90%;
+	display: inline-block;
+}
+.tlp-dashboard-page-detail-quiz-pass-label {
+	width: 10%;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 6px;
+}
+.tlp-dashboard-page-detail-link-container {
+	text-align: right;
+	font-style: italic;
+}
+.tlp-quiz-input-question {
+	color:#00a5b3;
+	font-size:14px;
+	font-weight:700;
+}
+/* ----------------------------------------------- END page detail styling ------------------------------- */
+/* ----------------------------------------------- page further detail view styling ------------------------------- */
+.tlp-dashboard-detail-search-container {
+	margin:10px 0;
+	table-layout:fixed;
+	width:100%;
+}
+#tlp-dashboard-page-detailview-wait-row {
+	display: none;
+}
+.tlp-dashboard-page-detailview-report {
+	min-height: 50px;
+}
+.tlp-dashboard-page-detailview-report-warning {
+	padding-top: 10px;
+	font-weight: bold;
+}
+.tlp-dashboard-detailview-report-block {
+	margin: 15px 0 25px 0;
+	padding-bottom: 30px;
+}
+.tlp-objective-table {
+	border-collapse: collapse;
+	outline: 1px solid rgb(224, 233, 234);
+	width:100%;
+}
+.tlp-objective-table th, .tlp-objective-table td {
+	padding: 5px;
+}
+.tlp-objective-table th {
+	border-width:0 0 1px 0;
+	border-style:solid;
+	border-color:#e4e4e4;
+}
+.objective-list-id-col {
+	text-align: center;
+	width:5%;
+	vertical-align:top;
+}
+.objective-list-description-col {
+	width:85%;
+	max-width: 300px;
+	text-align:left;
+	vertical-align:top;
+}
+tr.tlp-objective-list-stats-row td{
+	padding: 10px 5px;
+	border-width: 0;
+}
+.objective-list-completion-number-col,
+.objective-list-completion-rate-col {
+	width:10%;
+	text-align:center;
+	vertical-align:top;
+}
+.objective-list-completion-value-col {
+	text-align:center;	
+}
+.tlp-quiz-result-stats-row {
+	margin-bottom: 10px;
+}
+.tlp-quiz-result-stats-label {
+	width: 29%;
+	overflow-x: hidden;
+	display: inline-block;
+}
+.tlp-quiz-result-stats-bar {
+	width: 70%;
+	display: inline-block;
+}
+.tlp-quiz-input-question {
+	margin-top: 15px;
+	margin-bottom: 7px;
+}
+/* ----------------------------------------------- END page user view styling ------------------------------- */
+/* ----------------------------------------------- search box styling ------------------------------- */
+.tlp-dashboard-page-type-container {
+	display: inline-block;
+}
+.tlp-dashboard-page-type-container select{
+	max-width:100px;
+}
+.tlp-dashboard-page-searchbox-container {
+	display: inline-block;
+	margin-left: 10px;
+}
+.tlp-dashboard-page-searchbox-botton {
+	display: inline-block;
+	background-color: #6c6c6c;
+	color: #ffffff;
+	padding: 5px 7px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-left: 3px;
+}
+/* ----------------------------------------------- END search box styling ------------------------------- */
+/* -------------------------- auto-complete ------------------------- */
+ul.ui-widget-content.ui-autocomplete{
+	background-color:#fafafa;
+	background-image:none;
+	z-index:999999999;
+}
+.tlp-option-combobox {
+position: relative;
+display: inline-block;
+}
+.tlp-dashboard-detail-search-container .tlp-option-combobox {
+width:100%;
+}
+.tlp-option-input{
+width:100%;
+}
+ul.ui-autocomplete li.tlp-option{
+	font-weight:normal;
+}
+.tlp-option-highlight{
+	font-weight:bold;
+	text-decoration:underline;
+}
+/* normally included as part of form.css. Included duplicate here for optimize press, which skips form.css */
+.ui-autocomplete {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 10000;
+	border: 1px solid #5b9dd9;
+	-webkit-box-shadow: 0 1px 2px rgba( 30, 140, 190, 0.8 );
+	box-shadow: 0 1px 2px rgba( 30, 140, 190, 0.8 );
+	background-color: #fff;
+}
+.ui-autocomplete li {
+	margin-bottom: 0;
+	padding: 4px 10px;
+	white-space: nowrap;
+	text-align: left;
+}
+.ui-autocomplete li.ui-state-focus {
+	background-color: #ddd;
+	cursor: pointer;
+}
+/* -------------------------- END auto-complete ------------------------- */
+
