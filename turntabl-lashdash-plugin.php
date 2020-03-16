@@ -46,3 +46,42 @@ if (! class_exists('TurntablLearndashPlugin')){
         public static $PLUGIN_URI ='';
     }
 }
+
+class TurntablLearndashPluginClass
+{
+    //methods
+    function __construct() {
+        add_action( 'init', array( $this, 'custom_post_type'));
+    }
+
+    //activation method
+    function activate() {
+       
+    }
+
+    //deactivation method
+    function deactivate() {
+        
+    }
+    //uninstall method
+    function uninstall() {
+        
+    }
+
+    function custom_post_type() {
+        register_post_type( 'book', ['public' => true, 'label' =>'BOOKS']);
+    }
+}
+
+if( class_exists( 'TurntablLearndashPluginClass')) {
+    $turntablLearnDashPlugin = new TurntablLearndashPluginClass();
+}
+
+
+ //activation
+ register_activation_hook(__FILE__,array($turntablLearnDashPlugin, 'activate') );
+
+//deactivation
+register_deactivation_hook(__FILE__,array($turntablLearnDashPlugin, 'deactivate') );
+
+//uninstall
