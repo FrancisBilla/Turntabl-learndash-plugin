@@ -64,7 +64,7 @@ class TurntablLearndashPluginClass
     }
 
     public function settings_link( $links ) {
-        $settings_link = '<a href="addmin.php?page=turntablLearnDash_plugin">Setting</a>';
+        $settings_link = '<a href="admin.php?page=turntablLearnDash_plugin">Setting</a>';
         array_push( $links, $settings_link );
         return $links;
     }
@@ -113,7 +113,4 @@ require_once plugin_dir_path( __FILE__ ) . 'inc/turntabl-learndash-plugin-deacti
 register_deactivation_hook(__FILE__, array('TurntablLearnDashPluginDeactivate', 'deactivate'));
 
 
-
-    //  $turntablLearnDashPlugin = new TurntablLearndashPluginClass();
-    //  $turntablLearnDashPlugin -> register();
     

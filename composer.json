@@ -1,16 +1,16 @@
 {
-    "name": "turntablLearnDash/turntablLearnDash-plugin",
-    "description": "Awesome LMT plugin example",
+    "name": "francis/turntabl-learndash-plugin",
+    "description": "Awesome LearnDash Plugin by Turntabl",
     "type": "project",
     "license": "GPL",
     "authors": [
         {
-            "name": "Turntabl-LearnDash",
-            "email": "turntabl.io"
+            "name": "FrancisBilla",
+            "email": "francis.billa.fb@gmail.com"
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {}, 
     "autoload": {
         "psr-4": {"Inc\\": "./inc"}
     }
