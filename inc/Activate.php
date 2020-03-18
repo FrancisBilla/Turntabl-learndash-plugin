@@ -3,7 +3,9 @@
  * @package  Turntabl-LearnDash-Plugin
  */
 
-class TurntablLearndashPluginActivate
+namespace Inc;
+
+class Activate
 {
 	public static function activate() {
 		flush_rewrite_rules();
